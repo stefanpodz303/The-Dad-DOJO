@@ -1,6 +1,6 @@
 // Dad joke modal and API call
 $(document).ready(function(){
-      $(document).on("click","#joke-button","#next-btn-meat", function(){
+      $(document).on("click","#joke-btn","#next-btn-meat", function(){
         
         $("#joke").empty()
                 fetch("https://icanhazdadjoke.com/", {
