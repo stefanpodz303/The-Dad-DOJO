@@ -111,8 +111,10 @@ $(document).on("click","#mixology-Btn", function(){
         ingList3.text(ingName3 + ingMeasure3);
         ingList4.attr("class", "ingredients");
         ingList4.text(ingName4 + ingMeasure4);
+        
         $("#Mixology-content").append(drinkTitle);
-        $(".ingredientSection").append(ingList1);
+        $(drinkTitle).append("Ingredients");
+        $("Ingredients").append(ingList1);
         $(ingList1).append(ingList2);
         $(ingList2).append(ingList3);
         $(ingList3).append(ingList4);
