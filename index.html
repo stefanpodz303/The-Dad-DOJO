@@ -14,20 +14,34 @@
 
 <body>
     <section class="hero is-medium">
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="#dad-jokes" class="button is-danger is-rounded">Dad Jokes</a>
+                        <a href="#mixology" class="button is-danger is-rounded">Mixology</a>
+                        <a href="#recipes" class="button is-danger is-rounded">Recipes</a>
+                        <a href="#favorites" class="button is-danger is-rounded">Favorites</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <div class="hero-body">
+
             <div class="container">
                 <h1 class="title is-1 ">The Dad DOJO</h1>
                 <h2 class="subtitle">Be ready to sweep the leg of the competition at
                     your next BBQ.
                     <br>
                 </h2>
-                <a href="#" class="button is-white is-medium is-inverted">Learn More&ensp;<i
-                        class="fad fa-chevron-right"></i></a>
+                <div href="#" class="button is-white is-medium is-inverted">Learn More&ensp;<i
+                        class="fad fa-chevron-right"></i></div>
             </div>
         </div>
     </section>
     <section id="parallax-1" class="hero is-large ">
-        <div class="hero-body">
+        <div class="hero-body" id="recipes">
             <div class="container">
                 <div class="columns">
                     <div class="column is-6 is-offset-6">
@@ -60,7 +74,7 @@
         </div>
     </section>
     <section id="parallax-2" class="hero is-large ">
-        <div class="hero-body">
+        <div class="hero-body" id="dad-jokes">
             <div class="container">
                 <div class="columns">
                     <div class="column is-6">
@@ -91,16 +105,16 @@
         </div>
     </section>
     <section id="parallax-3" class="hero is-large ">
-        <div class="hero-body">
+        <div class="hero-body" id="mixology">
             <div class="container">
                 <div class="columns">
                     <div class="column is-6 is-offset-6">
                         <h1 class="title is-1 ">Mixology</h1>
                         <hr class="content-divider">
-                        <h2 class="subtitle"></h2>
-                        <div id="mixology-Btn" href="#" class="button is-white is-inverted">Next&ensp;<i
-                                class="fad fa-chevron-right"></i>
-                        </div>
+                        <div id="drinks"></div>
+                        <!-- <h2 class="subtitle"></h2> -->
+                        <a id="mixology-Btn" href="#" class="button is-white is-inverted">Get me a drink<i
+                                class="fad fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -110,22 +124,22 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Meat Recepice</p>
+                    <p class="modal-card-title">Mixology 101</p>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section id="Mixology-content" class="modal-card-body">
-                    <!-- Content ... -->
-                </section>
-                <footer class="modal-card-foot">
-                    <button class="button is-success">Add to Favorites</button>
-                    <button id="cancel-mix-modal" class="button">Cancel</button>
-                    <button id="next-btn-mix" class="button"> Next </button>
-                </footer>
+                    <div class=ingredientSection> Ingredients</div>
+                    <div class=instructionSection> Instructions</div>
+                    <footer class="modal-card-foot">
+                        <button class="button is-success">New Drink</button>
+                        <button class="button is-success">Save Drink Recipe</button>
+                        <button id="cancel-mixology-modal" class="button">Close</button>
+                    </footer>
             </div>
         </div>
     </section>
     <section class="cta va">
-        <div class="container">
+        <div class="container" id="favorites">
             <div class="columns">
                 <div class="column is-6">
                     <h1 class="title is-1 ">Favorites</h1>
