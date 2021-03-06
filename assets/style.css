@@ -122,3 +122,12 @@ span#joke-span {
   color: white !important;
 }
 
+#mixology-span {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.ingredients {
+  font-size: 15px;
+}
