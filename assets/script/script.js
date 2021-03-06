@@ -161,7 +161,7 @@ $(document).on("click","#favorite-btn", function(){
     .catch(err => {
         console.error(err);
     });
-})
+
 
 // $(document).on("click","#mixology-Btn", {
 //     getDrink();
