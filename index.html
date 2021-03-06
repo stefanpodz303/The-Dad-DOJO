@@ -79,11 +79,29 @@
                     <div class="column is-6 is-offset-6">
                         <h1 class="title is-1 ">Mixology</h1>
                         <hr class="content-divider">
-                        <h2 class="subtitle"></h2>
-                        <a href="#" class="button is-white is-inverted">Next&ensp;<i
+                        <div id="drinks"></div>
+                        <!-- <h2 class="subtitle"></h2> -->
+                        <a id="mixology-Btn" href="#" class="button is-white is-inverted">Get me a drink<i
                                 class="fad fa-chevron-right"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="Mixology-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Mixology 101</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section id="Mixology-content" class="modal-card-body">
+                    <div class = ingredientSection> Ingredients</div>
+                    <div class = instructionSection> Instructions</div>
+                <footer class="modal-card-foot">
+                    <button class="button is-success">New Drink</button>
+                    <button class="button is-success">Save Drink Recipe</button>
+                    <button id="cancel-mixology-modal" class="button">Close</button>
+                </footer>
             </div>
         </div>
     </section>
