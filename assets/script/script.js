@@ -29,18 +29,18 @@ $(document).ready(function(){
     $(document).on("click","#meat-btn", function(){
         // $("#BBQ-modal").attr("is-active");
         $("#BBQ-modal").addClass("is-active")
-
+        var val = "chicken"
         $("#BBQ-content").empty()
         
-                        fetch("https://icanhazdadjoke.com/", {
+     fetch(`https://api.edamam.com/search?q=${val}&app_id=89aa779a&app_key=3d2b1c5b688e900929dbd8f03617b2cf` , {
             headers: {
                 'Accept': 'application/json'
             }
         })
         .then(response => {
-            console.log(response);
             return response.json();
         }).then((data) => {
+            console.log(data);
             var meatLine = $("<div>") 
             meatLine.attr("id","meat-span")
             meatLine.css("color","rgb(0,0,0)")
