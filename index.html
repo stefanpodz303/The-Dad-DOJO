@@ -26,9 +26,9 @@
 
                 </div>
             </div>
-          </div>
+        </div>
         <div class="hero-body">
-            
+
             <div class="container">
                 <h1 class="title is-1 ">The Dad DOJO</h1>
                 <h2 class="subtitle">Be ready to sweep the leg of the competition at
@@ -59,15 +59,16 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Modal title</p>
+                    <p class="modal-card-title">Meat Recepice</p>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section id="BBQ-content" class="modal-card-body">
                     <!-- Content ... -->
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success">Save changes</button>
+                    <button class="button is-success">Add to Favorites</button>
                     <button id="cancel-meat-modal" class="button">Cancel</button>
+                    <button id="next-btn-meat" class="button"> Next </button>
                 </footer>
             </div>
         </div>
@@ -80,9 +81,26 @@
                         <h1 class="title is-1 ">Dad Jokes</h1>
                         <hr class="content-divider">
                         <div id="joke"></div>
-                        <div id="joke-button">Next&ensp;<i class="fad fa-chevron-right"></i></div>
+                        <div id="joke-btn" href="#" class="button is-white is-inverted">Next&ensp;<i
+                                class="fad fa-chevron-right"></i></div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="joke-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Jokes</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section id="joke-content" class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success">Add to Favorites:</button>
+                    <button id="cancel-joke-modal" class="button">Cancel</button>
+                </footer>
             </div>
         </div>
     </section>
@@ -101,6 +119,7 @@
                 </div>
             </div>
         </div>
+        <!-- Modal PupUp -->
         <div id="Mixology-modal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
@@ -125,35 +144,33 @@
         <div class="container" id="favorites">
             <div class="columns">
                 <div class="column is-6">
-                    <h1 class="title is-1 ">Advertising</h1>
+                    <h1 class="title is-1 ">Favorites</h1>
                     <hr class="content-divider">
-                    <h2 class="subtitle">Send us email and we Will Contact you . </h2>
-                </div>
-                <div class="column is-6">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input is-medium" type="text" placeholder="">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control">
-                            <input class="input is-medium" type="email" placeholder="John@Smith">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <button class="button is-white is-rounded is-outlined">Submit</button>
-                        </div>
-
+                    <div id="Favorites">
+                        <div id="favorite-btn" href="#" class="button is-white is-inverted">Next&ensp;<i
+                                class="fad fa-chevron-right"></i></div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div id="favorite-modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Meat Recepice</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section id="favorite-content" class="modal-card-body">
+                        <!-- Content ... -->
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button id="close" class="button is-success">Close</button>
+
+
+                    </footer>
+                </div>
+            </div>
+        </div>
 
     </section>
     <footer class="footer"> Thank you

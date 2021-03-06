@@ -1,6 +1,6 @@
 // Dad joke modal and API call
 $(document).ready(function(){
-      $(document).on("click","#joke-button", function(){
+      $(document).on("click","#joke-button","#next-btn-meat", function(){
         
         $("#joke").empty()
                 fetch("https://icanhazdadjoke.com/", {
@@ -47,7 +47,8 @@ $(document).ready(function(){
             meatLine.text(data.joke)
             $("#BBQ-content").append(meatLine)
                     
-            
+            localStorage.setItem(meatLine,data.joke)
+
         })
         .catch(err => {
             console.error(err);
@@ -64,8 +65,45 @@ $(document).ready(function(){
 // mixology modal and API call
 // function getDrink() {
     
-$(document).on("click","#mixology-Btn", function(){
+$(document).on("click","#mixology-Btn","#next-btn-mix", function(){
     $("#Mixology-modal").addClass("is-active")
+    $("#Mixology-content").empty()
+    
+    
+                    fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php", {
+                        "method": "GET",
+                    headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        console.log(response);
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+        var mixologyLine = $("<div>") 
+        mixologyLine.attr("id","mixology-span")
+        mixologyLine.css("color","rgb(0,0,0)")
+        mixologyLine.text(data.drinks[0])
+        mixologyLine.text()
+        $("#Mixology-content").append(mixologyLine)
+        $('#Mixology-content').append
+                
+    })
+    $(document).on("click","#cancel-mixology-btn", function(){
+        // $("#BBQ-modal").attr("is-active");
+        $("#BBQ-modal").removeClass("is-active")
+      
+    })
+    .catch(err => {
+        console.error(err);
+    });
+})
+$(document).on("click","#favorite-btn", function(){
+    $("#favorite-modal").addClass("is-active")
+    $("#favorite-content").getItem;
+})
+
 
     $("#Mixology-content").empty()
 
@@ -111,7 +149,7 @@ $(document).on("click","#mixology-Btn", function(){
         ingList3.text(ingName3 + ingMeasure3);
         ingList4.attr("class", "ingredients");
         ingList4.text(ingName4 + ingMeasure4);
-        
+
         $("#Mixology-content").append(drinkTitle);
         $(drinkTitle).append("Ingredients");
         $("Ingredients").append(ingList1);
