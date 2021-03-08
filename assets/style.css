@@ -123,11 +123,50 @@ span#joke-span {
 }
 
 #mixology-span {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
   margin-bottom: 10px;
 }
 
 .ingredients {
   font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.mod-head {
+  background-color: #48c774;
+}
+
+.mod-title {
+  color: snow;
+}
+
+/* h3 {
+  text-decoration: underline;
+} */
+
+#ingHeader {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  /* text-decoration: underline; */
+} 
+
+#instructionsHeader {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  /* text-decoration: underline; */
+} 
+
+#instructionData {
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none ;
+}
+#ingredient-input {
+  background-color: snow;
 }
