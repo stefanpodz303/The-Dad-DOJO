@@ -9,9 +9,10 @@ dropdown.addEventListener('click', function(event) {
 
 // Dad joke modal and API call
 $(document).ready(function(){
-      $(document).on("click","#joke-btn","#next-btn-meat", function(){
-        
-        $("#joke").empty()
+      $(document).on("click", "#joke-btn",function(){
+
+        $("#joke-modal").addClass("is-active")
+                $("#joke-modal").empty()
                 fetch("https://icanhazdadjoke.com/", {
             headers: {
                 'Accept': 'application/json'
@@ -25,7 +26,7 @@ $(document).ready(function(){
             jokeLine.attr("id","joke-span")
             jokeLine.css("color","rgb(255,255,255)")
             jokeLine.text(data.joke)
-            $("#joke").append(jokeLine)
+            $("#joke-modal").append(jokeLine)
                     
             
         })
@@ -34,7 +35,7 @@ $(document).ready(function(){
         });
     })
 
-    // recipe modal and API call
+
     $(document).on("click","#meat-btn", function(){
         // $("#BBQ-modal").attr("is-active");
         $("#BBQ-modal").addClass("is-active")
@@ -70,14 +71,6 @@ $(document).on("click","#mixology-Btn", function(){
     getDrink();
 })
 
-$(document).on("click","#new-Drink-Btn", function(){
-    getDrink();
-})
-    
-    function getDrink(){
-    $("#Mixology-modal").addClass("is-active")
-   
-var ingredientEntry = $('#ingredient-input').val();
     $("#Mixology-content").empty()
     fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php", {
 
@@ -171,15 +164,20 @@ var ingredientEntry = $('#ingredient-input').val();
     .catch(err => {
         console.error(err);
     });
-}
+
 
 // $(document).on("click","#mixology-Btn", {
 //     getDrink();
 // }
+// localStorage.setItem(meatLine,data.joke)
+$(document).on("click","#favorite-btn", function(){
+    $("#favorite-modal").addClass("is-active")
+    $("#favorite-content").getItem;
+})
+
 
 $(document).on("click","#cancel-mixology-modal", function(){
-    // $("#BBQ-modal").attr("is-active");
-    $("#Mixology-modal").removeClass("is-active")
+        $("#Mixology-modal").removeClass("is-active")
   
 })
 
