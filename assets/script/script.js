@@ -1,3 +1,12 @@
+var recipe = document.getElementById('BBQ-content');
+
+var dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', function(event) {
+  event.preventDefault();
+  dropdown.classList.toggle('is-active');
+});
+
+
 // Dad joke modal and API call
 $(document).ready(function(){
       $(document).on("click","#joke-btn","#next-btn-meat", function(){
@@ -29,7 +38,7 @@ $(document).ready(function(){
     $(document).on("click","#meat-btn", function(){
         // $("#BBQ-modal").attr("is-active");
         $("#BBQ-modal").addClass("is-active")
-        var val = "chicken"
+        var val = "barbeque"
         $("#BBQ-content").empty()
         
      fetch(`https://api.edamam.com/search?q=${val}&app_id=89aa779a&app_key=3d2b1c5b688e900929dbd8f03617b2cf` , {
@@ -40,14 +49,9 @@ $(document).ready(function(){
         .then(response => {
             return response.json();
         }).then((data) => {
+            
             console.log(data);
-            var meatLine = $("<div>") 
-            meatLine.attr("id","meat-span")
-            meatLine.css("color","rgb(0,0,0)")
-            meatLine.text(data.joke)
-            $("#BBQ-content").append(meatLine)
-                    
-            localStorage.setItem(meatLine,data.joke)
+            recipe.textContent = `${data.hits[0].recipe.ingredientLines[0]}`;
 
         })
         .catch(err => {
@@ -62,47 +66,6 @@ $(document).ready(function(){
     })
 })
 
-// mixology modal and API call
-// function getDrink() {
-    
-// $(document).on("click","#mixology-Btn","#next-btn-mix", function(){
-//     $("#Mixology-modal").addClass("is-active")
-//     $("#Mixology-content").empty()
-    
-    
-//             fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php", {
-//                 "method": "GET",
-//                  headers: {
-//                  'Accept': 'application/json'
-//         }
-//     })
-//     .then(response => {
-//         console.log(response);
-//         return response.json();
-//     }).then((data) => {
-//         console.log(data);
-//         var mixologyLine = $("<div>") 
-//         mixologyLine.attr("id","mixology-span")
-//         mixologyLine.css("color","rgb(0,0,0)")
-//         mixologyLine.text(data.drinks[0])
-//         mixologyLine.text()
-//         $("#Mixology-content").append(mixologyLine)
-//         $('#Mixology-content').append
-                
-//     })
-//     $(document).on("click","#cancel-mixology-btn", function(){
-//         // $("#BBQ-modal").attr("is-active");
-//         $("#BBQ-modal").removeClass("is-active")
-      
-//     })
-//     .catch(err => {
-//         console.error(err);
-//     });
-// })
-// $(document).on("click","#favorite-btn", function(){
-//     $("#favorite-modal").addClass("is-active")
-//     $("#favorite-content").getItem;
-// })
 $(document).on("click","#mixology-Btn", function(){
     getDrink();
 })
@@ -151,8 +114,6 @@ var ingredientEntry = $('#ingredient-input').val();
             'width': 200,
             'height': 200,
         })
-        
-        
 
         var drinkTitle = $("<h1>"); 
         var ingredientEl = $("<h3>");
