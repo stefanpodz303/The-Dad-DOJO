@@ -14,19 +14,20 @@
 
 <body>
     <section class="hero is-medium">
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div id="buttons-top" class="buttons">
-                        <a href="#dad-jokes" class="button is-danger is-rounded">Dad Jokes</a>
-                        <a href="#mixology" class="button is-danger is-rounded">Mixology</a>
-                        <a href="#recipes" class="button is-danger is-rounded">Recipes</a>
-                        <a href="#favorites" class="button is-danger is-rounded">Favorites</a>
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a href="#dad-jokes" class="button is-danger is-rounded">Dad Jokes</a>
+                            <a href="#mixology" class="button is-danger is-rounded">Mixology</a>
+                            <a href="#recipes" class="button is-danger is-rounded">Recipes</a>
+                            <a href="#favorites" class="button is-danger is-rounded">Favorites</a>
+                        </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </nav>
         <div class="hero-body">
 
             <div class="container">
@@ -35,8 +36,30 @@
                     your next BBQ.
                     <br>
                 </h2>
-                <div href="#" class="button is-white is-medium is-inverted">Learn More&ensp;<i
-                        class="fad fa-chevron-right"></i></div>
+                <div class="dropdown">
+                    <div class="dropdown-trigger is-active">
+                      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                        <span>Learn More</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                      <div class="dropdown-content">
+                        <div class="dropdown-item">
+                          <p><strong>Tired of Jim from across the street always stealing your thunder?</strong></p>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="dropdown-item">
+                          <p>Look no further than The Dad DOJO to hone all of your Dad related skills. Are Jim's ribs the talk of the BBQ? Find a better recipe here! Is Jim mortifying his family with his lame jokes? Find lamer ones here!</p>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <p>Sharpen your Dad skills and show Jim No Mercy!</p>
+                        <iframe src="https://giphy.com/embed/LPdTYfGETFqyQ" width="280" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-karate-kid-LPdTYfGETFqyQ">via GIPHY</a></p>    
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
@@ -59,7 +82,7 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Meat Recepice</p>
+                    <p class="modal-card-title">Meat Recipe</p>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section id="BBQ-content" class="modal-card-body">
