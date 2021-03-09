@@ -113,8 +113,7 @@
                         <hr class="content-divider">
                         <div id="drinks"></div>
                         <!-- <h2 class="subtitle"></h2> -->
-                        <div id="mixology-Btn" href="#" class="button is-white is-inverted">Get me a drink<i
-                                class="fad fa-chevron-right"></i></div>
+
                     </div>
                 </div>
             </div>
@@ -123,18 +122,20 @@
         <div id="Mixology-modal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Mixology 101</p>
-                    <button class="delete" aria-label="close"></button>
+                <header class="modal-card-head mod-head">
+                    <p class="modal-card-title mod-title" >Mixology 101</p>
+                    <!-- <button class="delete" aria-label="close"></button> -->
                 </header>
                 <section id="Mixology-content" class="modal-card-body">
-                    <div class=ingredientSection> Ingredients</div>
-                    <div class=instructionSection> Instructions</div>
-                    <footer class="modal-card-foot">
-                        <button class="button is-success">New Drink</button>
-                        <button class="button is-success">Save Drink Recipe</button>
-                        <button id="cancel-mixology-modal" class="button">Close</button>
-                    </footer>
+                    <div class = "ingredientSection"> Ingredients</div>
+                        <div id = "ingredientList"></div>
+                    <div class = "instructionSection"> Instructions</div>
+                    </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id = "new-Drink-Btn">New Drink</button>
+                    <button class="button is-success">Save Drink Recipe</button>
+                    <button id="cancel-mixology-modal" class="button">Close</button>
+                </footer>
             </div>
         </div>
     </section>
