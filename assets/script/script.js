@@ -64,10 +64,10 @@ $(document).ready(function(){
 })
 
 // mixology modal and API call
-// function getDrink() {
+function getDrink() {
     
-
-    $("#Mixology-content").empty()
+    $("#Mixology-modal").addClass("is-active");
+    $("#Mixology-content").empty();
     fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php", {
 
         // fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredientEntry, {
@@ -164,9 +164,12 @@ $(document).ready(function(){
     });
 }
 
-// $(document).on("click","#mixology-Btn", {
-//     getDrink();
-// }
+$(document).on("click","#mixology-Btn", function() {
+     getDrink();
+});
+$(document).on("click","#new-Drink-Btn", function(){
+    getDrink();
+})
 // localStorage.setItem(meatLine,data.joke)
 $(document).on("click","#favorite-btn", function(){
     $("#favorite-modal").addClass("is-active")
