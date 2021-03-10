@@ -38,28 +38,33 @@
                 </h2>
                 <div class="dropdown">
                     <div class="dropdown-trigger is-active">
-                      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                        <span>Learn More</span>
-                        <span class="icon is-small">
-                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </button>
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                            <span>Learn More</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
                     </div>
                     <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                      <div class="dropdown-content">
-                        <div class="dropdown-item">
-                          <p><strong>Tired of Jim from across the street always stealing your thunder?</strong></p>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">
+                                <p><strong>Tired of Jim from across the street always stealing your thunder?</strong>
+                                </p>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <div class="dropdown-item">
+                                <p>Look no further than The Dad DOJO to hone all of your Dad related skills. Are Jim's
+                                    ribs the talk of the BBQ? Find a better recipe here! Is Jim mortifying his family
+                                    with his lame jokes? Find lamer ones here!</p>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <p>Sharpen your Dad skills and show Jim No Mercy!</p>
+                            <iframe src="https://giphy.com/embed/LPdTYfGETFqyQ" width="280" height="260" frameBorder="0"
+                                class="giphy-embed" allowFullScreen></iframe>
+                            <p><a href="https://giphy.com/gifs/the-karate-kid-LPdTYfGETFqyQ">via GIPHY</a></p>
                         </div>
-                        <hr class="dropdown-divider">
-                        <div class="dropdown-item">
-                          <p>Look no further than The Dad DOJO to hone all of your Dad related skills. Are Jim's ribs the talk of the BBQ? Find a better recipe here! Is Jim mortifying his family with his lame jokes? Find lamer ones here!</p>
-                        </div>
-                        <hr class="dropdown-divider">
-                        <p>Sharpen your Dad skills and show Jim No Mercy!</p>
-                        <iframe src="https://giphy.com/embed/LPdTYfGETFqyQ" width="280" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-karate-kid-LPdTYfGETFqyQ">via GIPHY</a></p>    
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -90,7 +95,7 @@
                 </section>
                 <footer class="modal-card-foot">
                     <button class="button is-success">Add to Favorites</button>
-                    <button id="cancel-meat-modal" class="button">Cancel</button>
+                    <button id="cancel-meat-modal" class="button">Close</button>
                     <button id="next-btn-meat" class="button"> Next </button>
                 </footer>
             </div>
@@ -103,7 +108,6 @@
                     <div class="column is-6">
                         <h1 class="title is-1 ">Dad Jokes</h1>
                         <hr class="content-divider">
-                        <div id="joke"></div>
                         <div id="joke-btn" href="#" class="button is-white is-inverted">Next&ensp;<i
                                 class="fad fa-chevron-right"></i></div>
                     </div>
@@ -115,14 +119,15 @@
             <div class="modal-card">
                 <header class="modal-card-head">
                     <p class="modal-card-title">Jokes</p>
-                    <button class="delete" aria-label="close"></button>
+                    <button id="cancel-joke-modal" class="delete" aria-label="close"></button>
                 </header>
                 <section id="joke-content" class="modal-card-body">
                     <!-- Content ... -->
                 </section>
                 <footer class="modal-card-foot">
                     <button class="button is-success">Add to Favorites:</button>
-                    <button id="cancel-joke-modal" class="button">Cancel</button>
+                    <button id="next-btn-joke" class="button"> Next </button>
+                    <button id="cancel-joke-modal" class="button">Close</button>
                 </footer>
             </div>
         </div>
@@ -136,8 +141,8 @@
                         <hr class="content-divider">
                         <div id="drinks"></div>
                         <!-- <h2 class="subtitle"></h2> -->
-                        <a id="mixology-Btn" href="#" class="button is-white is-inverted">Get me a drink<i
-                            class="fad fa-chevron-right"></i></a>
+                        <div id="mixology-Btn" href="#" class="button is-white is-inverted">Get me a drink<i
+                                class="fad fa-chevron-right"></i></div>
                     </div>
                 </div>
             </div>
@@ -147,16 +152,16 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head mod-head">
-                    <p class="modal-card-title mod-title" >Mixology 101</p>
+                    <p class="modal-card-title mod-title">Mixology 101</p>
                     <!-- <button class="delete" aria-label="close"></button> -->
                 </header>
                 <section id="Mixology-content" class="modal-card-body">
-                    <div class = "ingredientSection"> Ingredients</div>
-                        <div id = "ingredientList"></div>
-                    <div class = "instructionSection"> Instructions</div>
-                    </section>
+                    <div class="ingredientSection"> Ingredients</div>
+                    <div id="ingredientList"></div>
+                    <div class="instructionSection"> Instructions</div>
+                </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success" id = "new-Drink-Btn">New Drink</button>
+                    <button class="button is-success" id="new-Drink-Btn">New Drink</button>
                     <button class="button is-success">Save Drink Recipe</button>
                     <button id="cancel-mixology-modal" class="button">Close</button>
                 </footer>
