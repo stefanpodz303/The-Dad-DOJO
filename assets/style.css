@@ -33,6 +33,8 @@
 footer {
   color: white;
   background: rgb(14, 14, 14) !important;
+  display: flex;
+  justify-content: center;
 }
 
 footer strong {
