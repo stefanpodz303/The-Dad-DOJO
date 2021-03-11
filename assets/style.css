@@ -172,3 +172,22 @@ span#joke-span {
 #ingredient-input {
   background-color: snow;
 }
+
+.favoriteData {
+  background-color: rgb(194, 247, 214);
+}
+
+.favoriteData {
+  font-size: 40px;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+.display-none {
+  display: none;
+}
+
+#learn-more {
+  padding-left: 15px;
+  padding-right: 15px;
+}

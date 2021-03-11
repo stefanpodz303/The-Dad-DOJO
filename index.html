@@ -58,7 +58,7 @@
                                     with his lame jokes? Find lamer ones here!</p>
                             </div>
                             <hr class="dropdown-divider">
-                            <p>Sharpen your Dad skills and show Jim No Mercy!</p>
+                            <p id = "learn-more">Sharpen your Dad skills and show Jim No Mercy!</p>
                             <iframe src="https://giphy.com/embed/LPdTYfGETFqyQ" width="280" height="260" frameBorder="0"
                                 class="giphy-embed" allowFullScreen></iframe>
                             <p><a href="https://giphy.com/gifs/the-karate-kid-LPdTYfGETFqyQ">via GIPHY</a></p>
@@ -86,23 +86,17 @@
         <div id="BBQ-modal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">BBQ Recipe</p>
-                    <button class="delete" aria-label="close"></button>
+                <header class="modal-card-head mod-head">
+                    <p class="modal-card-title mod-title">BBQ Recipe</p>
+                    <button id = "cancel-bbq-modal"class="delete" aria-label="close"></button>
                 </header>
                 <section id="BBQ-content" class="modal-card-body">
                     <!-- Content ... -->
                 </section>
                 <footer class="modal-card-foot">
-<<<<<<< Updated upstream
-                    <button class="button is-success">Add to Favorites</button>
+                    <button id="next-btn-meat" class="button is-success"> New Recipe </button>
+                    <button id = "save-meat-btn" class="button is-success">Save BBQ Recipe</button>
                     <button id="cancel-meat-modal" class="button">Close</button>
-                    <button id="next-btn-meat" class="button"> Next </button>
-=======
-                    <button id="next-btn-meat" class="button"> New Recipe </button>
-                    <button class="button is-success">Save BBQ Recipe</button>
-                    <button id="cancel-meat-modal" class="button">Close</button>
->>>>>>> Stashed changes
                 </footer>
             </div>
         </div>
@@ -114,7 +108,7 @@
                     <div class="column is-6">
                         <h1 class="title is-1 ">Dad Jokes</h1>
                         <hr class="content-divider">
-                        <div id="joke-btn" href="#" class="button is-white is-inverted">Next&ensp;<i
+                        <div id="joke-btn" href="#" class="button is-white is-inverted">Get Joke&ensp;<i
                                 class="fad fa-chevron-right"></i></div>
                     </div>
                 </div>
@@ -123,16 +117,16 @@
         <div id="joke-modal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Jokes</p>
+                <header class="modal-card-head mod-head">
+                    <p class="modal-card-title mod-title">Jokes</p>
                     <button id="cancel-joke-modal" class="delete" aria-label="close"></button>
                 </header>
                 <section id="joke-content" class="modal-card-body">
                     <!-- Content ... -->
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success">Add to Favorites:</button>
-                    <button id="next-btn-joke" class="button"> Next </button>
+                    <button id="next-btn-joke" class="button is-success"> New Joke </button>
+                    <button id = "fav-joke-btn"class="button is-success">Save Joke</button>
                     <button id="cancel-joke-modal" class="button">Close</button>
                 </footer>
             </div>
@@ -147,12 +141,8 @@
                         <hr class="content-divider">
                         <div id="drinks"></div>
                         <!-- <h2 class="subtitle"></h2> -->
-                        <div id="mixology-Btn" href="#" class="button is-white is-inverted">Get me a drink<i
-<<<<<<< Updated upstream
+                        <div id="mixology-Btn" href="#" class="button is-white is-inverted">Get drink<i
                                 class="fad fa-chevron-right"></i></div>
-=======
-                            class="fad fa-chevron-right"></i></div>
->>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -162,17 +152,17 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head mod-head">
-                    <p class="modal-card-title mod-title">Mixology 101</p>
-                    <!-- <button class="delete" aria-label="close"></button> -->
+                    <p class="modal-card-title mod-title" >Mixology 101</p>
+                    <button id = "mixology-close-icon"class="delete" aria-label="close"></button>
                 </header>
                 <section id="Mixology-content" class="modal-card-body">
-                    <div class="ingredientSection"> Ingredients</div>
-                    <div id="ingredientList"></div>
-                    <div class="instructionSection"> Instructions</div>
-                </section>
+                    <div class = "ingredientSection"></div>
+                        <div id = "ingredientList"></div>
+                    <div class = "instructionSection"></div>
+                    </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success" id="new-Drink-Btn">New Drink</button>
-                    <button class="button is-success">Save Drink Recipe</button>
+                    <button class="button is-success" id = "new-Drink-Btn">New Drink</button>
+                    <button class="button is-success" id = "save-Drink-Btn">Save Drink Recipe</button>
                     <button id="cancel-mixology-modal" class="button">Close</button>
                 </footer>
             </div>
@@ -185,7 +175,7 @@
                     <h1 class="title is-1 ">Favorites</h1>
                     <hr class="content-divider">
                     <div id="Favorites">
-                        <div id="favorite-btn" href="#" class="button is-white is-inverted">Next&ensp;<i
+                        <div id="favorite-btn" href="#" class="button is-white is-inverted">Show Favorites&ensp;<i
                                 class="fad fa-chevron-right"></i></div>
                     </div>
                 </div>
@@ -193,15 +183,21 @@
             <div id="favorite-modal" class="modal">
                 <div class="modal-background"></div>
                 <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Favorites</p>
+                    <header class="modal-card-head mod-head">
+                        <p class="modal-card-title mod-title">Favorites</p>
                         <button id="close" class="delete" aria-label="close"></button>
                     </header>
                     <section id="favorite-content" class="modal-card-body">
                         <!-- Content ... -->
+                        <h2 class = "favoriteData" id= "savedJokes">---Dad Jokes---</h2>
+                            <div id="savedJokesDiv"></div>
+                        <h2 class = "favoriteData">---Recipes---</h2>
+                            <div id="savedRecipes"></div>
+                        <h2 class = "favoriteData">---Cocktails---</h2>
+                        <div id="savedDrinks"></div>
                     </section>
                     <footer class="modal-card-foot">
-                        <button id="close" class="button is-success">Close</button>
+                        <button id="closeFav" class="button is-success">Close</button>
 
 
                     </footer>
