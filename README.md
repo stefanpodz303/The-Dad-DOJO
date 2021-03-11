@@ -5,6 +5,7 @@
 
 https://stefanpodz303.github.io/The-Dad-DOJO/
 
+
 ## Overview
 
 The Dad DOJO is a website made by Dad's for Dad's (or anyone who enjoys lame jokes, mixology, and barbeque). We created our site to help Dad's up their "Dad Game" by providing them a one stop shop with very necessary, but very stereotypical information related to being a Dad. 
@@ -19,6 +20,13 @@ The Dad DOJO is a website made by Dad's for Dad's (or anyone who enjoys lame jok
 
 -- It is our hope that our site provides some satire and humor to the people who visit, but also provides real information and smooth functionality. 
 
+## Contributors
+Stefan Podzinski https://github.com/stefanpodz303/The-Dad-DOJO
+
+Sergey Ishimov 
+
+Josh Walters 
+
 ## Third Pary Databases and Technologies Used
 
 1. Bulma.io - CSS framework
@@ -26,3 +34,5 @@ The Dad DOJO is a website made by Dad's for Dad's (or anyone who enjoys lame jok
 3. icanhazdadjoke.com - Jokes API
 4. edamam.com - BBQ Recipes API
 5. thecocktaildb.com - Mixology API
+
+![screenshot of webpage](./assets/pictures/the-dad-dojo-screenshot.png)
