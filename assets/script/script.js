@@ -102,9 +102,9 @@ function getBBQ() {
             // 'height': 200,
             // })
             var bbqName = data.hits[recipeIndex].recipe.label;
+            
             // var bbqUrl = data.hits[0].recipe.shareAs;
             var bbqNameArea = $("<div>");
-            bbqNameArea.attr("id", "recipeArea");
             var bbqLabel = $("<h2>");
             bbqLabel.text(bbqName);
             bbqNameArea.append(bbqLabel);
@@ -295,22 +295,23 @@ $(document).on("click", "#fav-joke-btn", function () {
 
 //code to display data in the favorites modal
 function displaySavedData() {
+     $("#savedDrinks").html("");
     let localDrinkArr = JSON.parse(localStorage.getItem("Saved-Drink")) || [];
     localDrinkArr.forEach(val => {
-        $("#savedDrinks").html("");
+       
 
         $("#savedDrinks").append(val)
     })
-
+    $("#savedRecipes").html("");
     let localMeatArr = JSON.parse(localStorage.getItem("Saved-Meat")) || [];
     localMeatArr.forEach(val => {
-        $("#savedRecipes").html("");
+        
         $("#savedRecipes").append(val)
     })
-
+    $("#savedJokesDiv").html("");
     let localJokeArr = JSON.parse(localStorage.getItem("Saved-Joke")) || [];
     localJokeArr.forEach(val => {
-        $("#savedJokesDiv").html("");
+        
         var pTag = $(`
             <p>${val}</p>
         `)
