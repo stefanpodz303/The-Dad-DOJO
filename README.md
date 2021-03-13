@@ -27,6 +27,8 @@ Sergey Ishimov
 
 Josh Walters 
 
+Gerard Watson
+
 ## Third Pary Databases and Technologies Used
 
 1. Bulma.io - CSS framework
