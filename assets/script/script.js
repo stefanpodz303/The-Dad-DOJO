@@ -110,15 +110,17 @@ function getBBQ() {
             bbqNameArea.append(bbqLabel);
             var bbqWrap = $("<div>");
 
+            $("#BBQ-content").append(bbqNameArea);
+            
+
             bbqWrap.append(bbqUrl);
 
             $("#BBQ-content").append(bbqWrap);
+            bbqNameArea.append(imageBBQ);
 
             //  = `${data.hits[0].recipe.image[0]}`;
             // recipe.textContent = data.hits[0].recipe.image[0];
-            $("#BBQ-content").append(bbqNameArea);
-            bbqNameArea.append(imageBBQ);
-
+           
             // imageBBQ.insertAfter(bbqLink);
             // recipe.textContent = `${data.hits[0].recipe.ingredients}`
         })
