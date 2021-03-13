@@ -21,7 +21,7 @@ The Dad DOJO is a website made by Dad's for Dad's (or anyone who enjoys lame jok
 -- It is our hope that our site provides some satire and humor to the people who visit, but also provides real information and smooth functionality. 
 
 ## Contributors
-Stefan Podzinski https://github.com/stefanpodz303/The-Dad-DOJO
+Stefan Podzinski 
 
 Sergey Ishimov 
 
